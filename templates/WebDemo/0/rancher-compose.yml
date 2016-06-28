@@ -1,7 +1,7 @@
 .catalog:
   name: "WebDemo"
   version: "v0.2"
-  description: "这是一个基于Python代码的Web应用测试程序"
+  description: "WebDemo"
 web:
   scale: 2
 lb:
