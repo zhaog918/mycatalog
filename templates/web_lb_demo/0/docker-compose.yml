@@ -3,9 +3,15 @@ web:
   ports:
    - 80
   command: python app.py
-  volumes:
-   - $PWD/code:/code
   links:
-   - redis
-redis:
+   - database:redis
+
+lb:
+  ports:
+  - 80:80
+  image: rancher/load-balancer-service
+  links:
+  - web:web
+
+database:
   image: redis
