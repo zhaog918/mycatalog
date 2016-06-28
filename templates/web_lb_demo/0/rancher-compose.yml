@@ -2,10 +2,8 @@
   name: web_lb_demo
   version: v0.2
   description: web_lb_demo
-  
 web:
   scale: 2
-
 lb:
   scale: 1
   load_balancer_config:
@@ -14,8 +12,8 @@ lb:
     port: 42
     interval: 2000
     unhealthy_threshold: 3
-    healthy_threshold: 2
+    strategy: recreate
     response_timeout: 2000
-
+    healthy_threshold: 2
 database:
   scale: 1
