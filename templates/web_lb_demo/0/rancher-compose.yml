@@ -3,7 +3,7 @@
   version: "v0.2"
   description: "这是一个基于Python代码的Web应用测试程序"
 web:
-  scale: 2
+  scale: 1
 lb:
   scale: 1
   load_balancer_config:
