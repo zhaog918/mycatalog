@@ -3,13 +3,11 @@ web:
   command: python app.py
   links:
    - redis:redis
-
 lb:
   ports:
   - 80:5000
   image: rancher/load-balancer-service
   links:
   - web:web
-
 redis:
   image: redis
