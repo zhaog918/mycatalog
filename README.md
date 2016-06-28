@@ -1,4 +1,4 @@
-# Rancher Catalog
+# MyCatalog
 
 # License
 Copyright (c) 2014-2015 [Rancher Labs, Inc.](http://rancher.com)
