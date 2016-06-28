@@ -1,0 +1,5 @@
+name: web_lb_demo
+description: |
+  这是一个基于Python写的WEB网页测试程序，用来验证PaaS平台的负载均衡功能
+version: v0.2
+category: Demo
