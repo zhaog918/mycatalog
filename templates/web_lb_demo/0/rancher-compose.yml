@@ -1,7 +1,7 @@
 .catalog:
-  name: "web_lb_demo"
-  version: "v0.2"
-  description: "web_lb_demo"
+  name: web_lb_demo
+  version: v0.2
+  description: web_lb_demo
   
 web:
   scale: 2
