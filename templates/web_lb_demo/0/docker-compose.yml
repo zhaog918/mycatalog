@@ -2,14 +2,14 @@ web:
   image: zhaog918/web_lb_demo
   command: python app.py
   links:
-   - database:redis
+   - redis
 
 lb:
   ports:
   - 80:5000
   image: rancher/load-balancer-service
   links:
-  - web:web
+  - web
 
-database:
+redis:
   image: redis
