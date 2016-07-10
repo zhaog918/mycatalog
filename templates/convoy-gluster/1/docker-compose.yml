@@ -12,6 +12,8 @@ convoy-gluster:
   external_links:
     - "${GLUSTERFS_SERVICE}:glusterfs"
   image: webboy89860/convoy-agent:v0.9.0
+  environments:
+    VOLUME_POOL: ${VOLUME_POOL}
   command: volume-agent-glusterfs
 
 convoy-gluster-storagepool:
