@@ -1,5 +1,5 @@
 web:
-  image: zhaog918/webdemo
+  image: reg.hnzy.com/test/webdemo:master-f2aa0ae
   command: python app.py
   links:
    - redis:redis
